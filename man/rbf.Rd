@@ -5,7 +5,7 @@
 \alias{predict.rbf}
 \title{Radial basis function model}
 \usage{
-rbf(X, Y, augmented = TRUE)
+rbf(X, Y, augmented = TRUE, kernel = "cubic")
 
 \method{predict}{rbf}(object, xp, ...)
 }
@@ -15,6 +15,8 @@ rbf(X, Y, augmented = TRUE)
 \item{Y}{Matrix with outputs}
 
 \item{augmented}{Should the augmented RBF model be used?}
+
+\item{kernel}{Which kernel should be used}
 
 \item{object}{RBF model}
 
